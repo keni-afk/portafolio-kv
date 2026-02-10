@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenia Ventura | Desarrolladora Full Stack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhancements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Cargando...</div>
+        </div>
+    </div>
+
+    <!-- Cursor Personalizado -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">KV</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link active" data-translate="nav_inicio">Inicio</a></li>
+                <li><a href="#sobre-mi" class="nav-link" data-translate="nav_sobre">Sobre Mí</a></li>
+                <li><a href="#experiencia" class="nav-link" data-translate="nav_experiencia">Experiencia</a></li>
+                <li><a href="#servicios" class="nav-link" data-translate="nav_servicios">Servicios</a></li>
+                <li><a href="#habilidades" class="nav-link" data-translate="nav_habilidades">Habilidades</a></li>
+                <li><a href="#contacto" class="nav-link" data-translate="nav_contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <!-- Selector de Idioma -->
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="es">
+                        <span class="flag">🇪🇸</span>
+                    </button>
+                    <button class="lang-btn" data-lang="en">
+                        <span class="flag">🇺🇸</span>
+                    </button>
+                </div>
+                <!-- Toggle de Tema -->
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div id="particles-js"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="typing-container">
+                    <span class="typing-text">Hola, soy</span>
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-letter">K</span>
+                    <span class="name-letter">e</span>
+                    <span class="name-letter">n</span>
+                    <span class="name-letter">i</span>
+                    <span class="name-letter">a</span>
+                    <span class="name-space"> </span>
+                    <span class="name-letter">V</span>
+                    <span class="name-letter">e</span>
+                    <span class="name-letter">n</span>
+                    <span class="name-letter">t</span>
+                    <span class="name-letter">u</span>
+                    <span class="name-letter">r</span>
+                    <span class="name-letter">a</span>
+                </h1>
+                <div class="hero-role">
+                    <span class="role-text">Desarrolladora Full Stack</span>
+                    <div class="role-subtitle">Especialista en Flutter, Python & Integración ERP</div>
+                </div>
+                <p class="hero-description">
+                    Transformo ideas en soluciones digitales escalables. 
+                    Desarrollo aplicaciones web y móviles con tecnologías modernas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-primary">
+                        <span>Trabajemos Juntos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#servicios" class="btn btn-secondary">
+                        <span>Ver Servicios</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="3">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Proyectos Completados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">Tecnologías</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-illustration">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="window-body">
+                            <pre class="code-content">
+<span class="code-keyword">class</span> <span class="code-class">Developer</span> {
+  <span class="code-keyword">constructor</span>() {
+    <span class="code-keyword">this</span>.name = <span class="code-string">"Kenia Ventura"</span>;
+    <span class="code-keyword">this</span>.role = <span class="code-string">"Full Stack"</span>;
+    <span class="code-keyword">this</span>.skills = [
+      <span class="code-string">"Flutter"</span>,
+      <span class="code-string">"Python"</span>,
+      <span class="code-string">"SAP B1"</span>,
+      <span class="code-string">"SQL"</span>
+    ];
+  }
+  
+  <span class="code-function">createMagic</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"✨ Amazing Solutions"</span>;
+  }
+}
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">Scroll para explorar</div>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Conóceme</span>
+                <h2 class="section-title">Sobre Mí</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-illustration">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <path fill="url(#grad1)" d="M47.1,-57.8C59.9,-48.2,68.4,-32.7,71.8,-16.1C75.2,0.5,73.5,18.2,65.3,32.7C57.1,47.2,42.4,58.5,26.3,64.2C10.2,69.9,-7.3,69.9,-23.5,64.7C-39.7,59.5,-54.6,49.1,-63.4,34.8C-72.2,20.5,-74.9,2.3,-71.4,-14.7C-67.9,-31.7,-58.2,-47.5,-44.8,-56.9C-31.4,-66.3,-15.7,-69.3,0.5,-69.9C16.7,-70.5,34.3,-67.4,47.1,-57.8Z" transform="translate(100 100)" />
+                            </svg>
+                            <div class="tech-icons floating">
+                                <i class="fab fa-python"></i>
+                                <i class="fab fa-flutter"></i>
+                                <i class="fas fa-database"></i>
+                                <i class="fab fa-js"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">Desarrolladora apasionada por crear soluciones digitales</h3>
+                    <p>
+                        Soy desarrolladora de software con sólida experiencia en la creación de 
+                        aplicaciones web y móviles, especializada en la integración con sistemas ERP 
+                        como SAP Business One y en la automatización de procesos empresariales.
+                    </p>
+                    <p>
+                        Mi enfoque se centra en desarrollar soluciones escalables y orientadas a 
+                        resultados, utilizando tecnologías modernas como Flutter para aplicaciones 
+                        móviles, Python para backend, y bases de datos SQL para gestión eficiente de datos.
+                    </p>
+                    <p>
+                        Actualmente trabajo en Platinum Corp desarrollando addons para SAP Business One 
+                        y cursando Ingeniería de Software en la UTP, complementando mi formación técnica 
+                        en Diseño y Desarrollo de Software.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Integración ERP & APIs</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Desarrollo Mobile & Web</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Automatización de Procesos</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Metodologías Ágiles</span>
+                        </div>
+                    </div>
+                    <a href="#contacto" class="btn btn-primary">
+                        <span>Contactar</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section id="experiencia" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mi Trayectoria</span>
+                <h2 class="section-title">Experiencia Profesional</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2024 - Actualidad</div>
+                        <h3 class="timeline-title">Desarrolladora de Software</h3>
+                        <h4 class="timeline-company">Platinum Corp</h4>
+                        <ul class="timeline-description">
+                            <li>Desarrollo de addons para SAP Business One que automatizan procesos</li>
+                            <li>Integración con APIs internas para sincronización en tiempo real</li>
+                            <li>Optimización de flujos de trabajo empresariales</li>
+                            <li>Soporte técnico especializado a clientes</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">SAP B1</span>
+                            <span class="tag">APIs</span>
+                            <span class="tag">Automatización</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Ene 2024 - Jul 2024</div>
+                        <h3 class="timeline-title">Asesor de Servicios</h3>
+                        <h4 class="timeline-company">Atento - Aerolínea SKY</h4>
+                        <ul class="timeline-description">
+                            <li>Gestión personalizada de atención a clientes</li>
+                            <li>Especialización en sistema SABRE</li>
+                            <li>Coordinación en área BackOffice</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">SABRE</span>
+                            <span class="tag">Atención al Cliente</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jun 2023 - Nov 2023</div>
+                        <h3 class="timeline-title">Teleoperadora</h3>
+                        <h4 class="timeline-company">Covisian España - Movistar</h4>
+                        <ul class="timeline-description">
+                            <li>Estrategias de retención de clientes</li>
+                            <li>Identificación de oportunidades de venta</li>
+                            <li>Soluciones personalizadas</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Ventas</span>
+                            <span class="tag">Retención</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2022 - Ene 2023</div>
+                        <h3 class="timeline-title">Ejecutiva de Ventas</h3>
+                        <h4 class="timeline-company">Konecta - Portabilidad Chile</h4>
+                        <ul class="timeline-description">
+                            <li>Identificación de oportunidades de portabilidad</li>
+                            <li>Presentación de beneficios personalizados</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">Ventas</span>
+                        </div>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+            </div>
+
+            <div class="education">
+                <h3 class="education-title">Formación Académica</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Ingeniería de Software</h4>
+                        <p class="institution">Universidad Tecnológica del Perú (UTP)</p>
+                        <p class="period">Mar 2024 - Actualidad</p>
+                    </div>
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Diseño y Desarrollo de Software</h4>
+                        <p class="institution">CERTUS</p>
+                        <p class="period">Mar 2021 - Dic 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Lo Que Ofrezco</span>
+                <h2 class="section-title">Servicios</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Desarrollo de Apps Móviles</h3>
+                    <p>Aplicaciones nativas y multiplataforma con Flutter. Interfaces intuitivas y rendimiento óptimo.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Flutter & Android Studio</li>
+                        <li><i class="fas fa-check"></i> Diseño UI/UX moderno</li>
+                        <li><i class="fas fa-check"></i> Integración con APIs</li>
+                        <li><i class="fas fa-check"></i> App Store & Google Play</li>
+                    </ul>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Desarrollo Web Full Stack</h3>
+                    <p>Aplicaciones web modernas y escalables. Frontend reactivo y backend robusto.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
+                        <li><i class="fas fa-check"></i> Python & Java Backend</li>
+                        <li><i class="fas fa-check"></i> APIs RESTful</li>
+                        <li><i class="fas fa-check"></i> Base de datos SQL</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Integración ERP & APIs</h3>
+                    <p>Conecta tus sistemas empresariales. Automatización y sincronización en tiempo real.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> SAP Business One</li>
+                        <li><i class="fas fa-check"></i> Desarrollo de Addons</li>
+                        <li><i class="fas fa-check"></i> Integración de APIs</li>
+                        <li><i class="fas fa-check"></i> Sincronización de datos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Bases de Datos & Backend</h3>
+                    <p>Diseño e implementación de bases de datos eficientes y escalables.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> MySQL & SQL Server</li>
+                        <li><i class="fas fa-check"></i> Optimización de consultas</li>
+                        <li><i class="fas fa-check"></i> Modelado de datos</li>
+                        <li><i class="fas fa-check"></i> Seguridad y respaldos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Automatización de Procesos</h3>
+                    <p>Optimiza tus operaciones con scripts y herramientas de automatización.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Python Scripts</li>
+                        <li><i class="fas fa-check"></i> Automatización de tareas</li>
+                        <li><i class="fas fa-check"></i> Procesamiento de datos</li>
+                        <li><i class="fas fa-check"></i> Reportes automáticos</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                        <div class="icon-bg"></div>
+                    </div>
+                    <h3>Consultoría & Soporte</h3>
+                    <p>Asesoramiento técnico y mantenimiento de sistemas existentes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Análisis de requerimientos</li>
+                        <li><i class="fas fa-check"></i> Arquitectura de software</li>
+                        <li><i class="fas fa-check"></i> Code review</li>
+                        <li><i class="fas fa-check"></i> Soporte técnico</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Mis Capacidades</span>
+                <h2 class="section-title">Habilidades Técnicas</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skills-categories">
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            Lenguajes de Programación
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-mobile-alt"></i>
+                            Desarrollo Mobile & Web
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Flutter</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-percentage">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="87"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Android Studio</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-database"></i>
+                            Bases de Datos & ERP
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL Server</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SAP Business One</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-percentage">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="87"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Herramientas & Metodologías
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Scrum / Agile</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="82"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-cloud">
+                    <h3 class="cloud-title">Tecnologías</h3>
+                    <div class="tech-icons-grid">
+                        <div class="tech-icon-item" data-tooltip="Python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="JavaScript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="Java">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="Flutter">
+                            <svg viewBox="0 0 24 24" width="48" height="48">
+                                <path fill="currentColor" d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z"/>
+                            </svg>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="HTML5">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="Bootstrap">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="Git">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="Database">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="API">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="tech-icon-item" data-tooltip="WordPress">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Hablemos</span>
+                <h2 class="section-title">Contacto</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Transformemos tu idea en realidad</h3>
+                    <p>
+                        ¿Tienes un proyecto en mente? Estoy aquí para ayudarte a desarrollar 
+                        soluciones digitales que impulsen tu negocio.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <a href="mailto:kenvm1003@gmail.com">kenvm1003@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Teléfono</h4>
+                                <a href="tel:+51970522622">+51 970 522 622</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Ubicación</h4>
+                                <p>Lima, Perú</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/kenia-ventura-550652246" target="_blank">Visitar perfil</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/kenia-ventura-550652246" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/keniaventura" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:kenvm1003@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre completo</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                            <span class="form-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Enviar Mensaje</span>
+                            <span class="btn-loading">
+                                <i class="fas fa-spinner fa-spin"></i> Enviando...
+                            </span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">KV</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p>Desarrolladora Full Stack especializada en soluciones innovadoras</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> kenvm1003@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +51 970 522 622</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kenia Ventura. Todos los derechos reservados.</p>
+                <p>Hecho con <i class="fas fa-heart"></i> y <i class="fas fa-code"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón volver arriba -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat" id="whatsappChat">
+        <div class="chat-button" id="chatButton">
+            <i class="fab fa-whatsapp"></i>
+            <span class="chat-badge">1</span>
+        </div>
+        <div class="chat-popup" id="chatPopup">
+            <div class="chat-header">
+                <div class="chat-avatar">
+                    <img src="https://ui-avatars.com/api/?name=Kenia+Ventura&background=667eea&color=fff&size=50" alt="KV">
+                    <span class="status-indicator"></span>
+                </div>
+                <div class="chat-info">
+                    <h4>Kenia Ventura</h4>
+                    <p>En línea</p>
+                </div>
+                <button class="chat-close" id="chatClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-body">
+                <div class="chat-message bot-message">
+                    <p>¡Hola! 👋</p>
+                </div>
+                <div class="chat-message bot-message">
+                    <p>Soy Kenia Ventura, desarrolladora Full Stack. ¿En qué puedo ayudarte?</p>
+                </div>
+                <div class="chat-options">
+                    <button class="chat-option" data-message="Quiero información sobre tus servicios">
+                        💼 Servicios
+                    </button>
+                    <button class="chat-option" data-message="Me gustaría trabajar contigo">
+                        🤝 Colaboración
+                    </button>
+                    <button class="chat-option" data-message="Tengo una consulta técnica">
+                        💻 Consulta
+                    </button>
+                    <button class="chat-option" data-message="Solicitar presupuesto">
+                        💰 Presupuesto
+                    </button>
+                </div>
+            </div>
+            <div class="chat-footer">
+                <a href="https://wa.me/51970522622?text=Hola%20Kenia,%20me%20gustaría%20contactarte" 
+                   target="_blank" 
+                   class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Abrir en WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/script-enhanced.js"></script>
+</body>
+</html>
