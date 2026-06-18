@@ -25,7 +25,7 @@ Portafolio web moderno y dinámico con **modo oscuro**, **multi-idioma (ES/EN)**
 
 **Kenia Ventura**  
 📧 kenvm1003@gmail.com  
-📱 +51 970 522 622  
+📱 +51 937 179 760
 🔗 [LinkedIn](https://linkedin.com/in/kenia-ventura-550652246)  
 📍 Lima, Perú
 
